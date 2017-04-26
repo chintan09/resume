@@ -1,0 +1,120 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{CHINTAN PARIKH}
+\address{3500 Granada Ave, Apt 410 \linebreak Santa Clara CA 95051}
+\contacts{(412) 551-0019 \linebreak chintan09@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Software Engineer}{Pearl Auto, Scotts Valley CA}{Dec 14 -- Current}
+			\begin{itemize}
+				\item Early employee at Pearl, work on System Software for license plate camera and OBD car adapter
+				\item Primary responsible for Linux system bring up, Power management, BTLE architecture, MFi software support and several system services running under Linux \& RTOS
+				\item Led efforts around CAN bus software development for the OBD car adapter
+				\item Brought up prototype platforms using Raspberry Pi and Odroid XU4 for early proof of concept system
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Engineer}{Apple Inc., Cupertino CA}{Jan 11 -- Dec 14}	
+			\textbf{iOS Motion and Location Group}
+			\begin{itemize}
+				\item Developed a set of new CoreMotion framework API for distance estimation and flights on iOS 8
+				\item Prototyped machine learning regression algorithm on a memory-constrained M7 co-processor
+				\item Innovated Pedometer calibration techniques to reduce error (by 10\%), resulted in filing of patents
+			\end{itemize}
+
+			\textbf{Special Projects Group, Apple Watch}
+			\begin{itemize}
+				\item Founding member of the software team, worked on implementing fitness algorithm using heart rate sensor, accelerometer to compute total calorie consumption, also developed user data collections apps
+			\end{itemize}
+
+			\textbf{iPod Software Engineering}
+			\begin{itemize}
+				\item Led firmware efforts for development of new Lightning connector and Lightning to 30 pin adaptor
+				\item On iPod developed a new interface similar to USB HID to support new connector and accessories
+				\item Worked with MFi and QA teams to ensure compatibility of new adaptor with existing accessories
+				\item Interviewed over hundreds of candidate (phone screen, on site interviews) for positions in the group
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Graduate Intern}{Cisco Systems, San Jose CA}{May -- Aug 10}
+			\begin{itemize}
+				\item Developed new API’s for managing Lock free Trace buffers and memory tracking through named Malloc extensions; deployed in production software.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{System Software Engineer}{ST-Ericsson, Bangalore India }{Oct 07 -- Jul 09}
+			\begin{itemize}
+				\item Module lead for Video Telephony, Call modules in the application stack for 3G reference platform
+				\item Worked with OEM based in China and South Korea to integrate this platform into their phones
+			\end{itemize}
+		\end{cvsubsection}
+
+	\end{cvsection}
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Pittsburgh, PA}{Carnegie Mellon University}{Dec 10}
+			\begin{itemize}
+				\item M.S. in Electrical and Computer Engineering
+				\item Coursework and research focussed on Embedded Real time systems and broader Computer Systems area
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Trichy, India}{National Institute of Technology}{May 07}
+			\begin{itemize}
+				\item B.Tech. in Instrumentation and Control Engineering
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Set Solver} (Current). Working on an iOS app which detects valid sets from a picture of cards using OpenCV
+				\item \textbf{Identifying tags from millions of text question} (Fall 13). Performed data analysis on 6 million Stack Overflow questions and built a Machine learning classifier for  each of the top 500 tags. Report at \url{http://goo.gl/3kb4aN}
+				\item \textbf{x86 Kernel from scratch} (Spring 10).  Wrote a UNIX like kernel with Multithreading, Preemptive Multitasking
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item C++, C, Python, Objective-C, bash, assembly (x86, arm)
+				\item Source control (git, svn), Xcode, gdb
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
